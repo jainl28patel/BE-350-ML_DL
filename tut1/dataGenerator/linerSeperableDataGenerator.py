@@ -26,6 +26,8 @@ for i in range(n):
     Y.append(y)
     if y > m*x + c:
         true_label.append(1)
+    elif  (y < m*x + c):
+        true_label.append(-1)
     else:
         true_label.append(0)
 
